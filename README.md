@@ -7,7 +7,7 @@
 
 ### 2. Git репозиторий
 
-https://github.com/OlgaGlav/digital
+https://github.com/OlgaGlav/digitall
 
 ### 3. Технологии
 
@@ -29,9 +29,9 @@ checkstyle
 For running application:
 
 ```bash
-git clone https://github.com/OlgaGlav/digital
-cd digital
+git clone https://github.com/OlgaGlav/digitall
+cd digitall
 
-docker-compose -up
+docker-compose up
 ```
 
