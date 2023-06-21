@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "b81d6a5f-fee8-46c5-852c-5cd4e0acc7fd",
+		"name": "digital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18006981"
+	},
+	"item": [
+		{
+			"name": "getUserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Vacia\",\r\n    \"email\": \"some@email.kz\",\r\n    \"dateBirth\": \"2000-10-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"pin007@tut.by\",\r\n    \"username\":\"new username\",\r\n    \"dateBirth\": \"2010-10-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/users/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getItemById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/items/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Coffee\",\r\n    \"price\": \"15.59\",\r\n    \"description\": \"Lavazza oro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/items",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"pin007@tut.by\",\r\n    \"username\":\"new username\",\r\n    \"dateBirth\": \"2010-10-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/items/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"items",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPositionById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/positions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"positions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPosition",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Coffee\",\r\n    \"price\": \"15.59\",\r\n    \"description\": \"Lavazza oro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/positions",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePosition",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"new name\",\r\n    \"description\": \"description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/positions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"positions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePosition",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"new name\",\r\n    \"description\": \"description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/positions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"positions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Coffee\",\r\n    \"description\": \"Lavazza oro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/positions",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOrderById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/positions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"positions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOrder",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/orders/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

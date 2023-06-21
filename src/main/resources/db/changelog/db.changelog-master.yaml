@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/2023-06-20-position-create-table.sql
+  - include:
+      file: db/changelog/changeset/2023-06-20-position-insert-data.sql
+  - include:
+      file: db/changelog/changeset/2023-06-20-role-create-table.sql
+  - include:
+      file: db/changelog/changeset/2023-06-20-role-insert-data.sql
+  - include:
+      file: db/changelog/changeset/2023-06-20-user-create-table.sql
+  - include:
+      file: db/changelog/changeset/2023-06-20-user-insert-data.sql
+  - include:
+      file: db/changelog/changeset/2023-06-20-item-create-table.sql
+  - include:
+      file: db/changelog/changeset/2023-06-20-item-insert-data.sql
+  - include:
+      file: db/changelog/changeset/2023-06-20-order-create-table.sql

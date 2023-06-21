@@ -1,0 +1,43 @@
+version: "3.7"
+
+services:
+  digital_db:
+    image: postgres:13.3
+    container_name: digital-postgredb
+    hostname: digital_db
+    ports:
+      - 32760:5432
+    volumes:
+      - ~/app/postgresql:/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=digital
+    networks:
+      - backend
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  digital:
+    image: oglavdel/digital:1.0
+    ports:
+      - 8086:8086
+    environment:
+      hostname: localhost
+      DATABASESERVER_PORT: "32760:5432"
+      SPRING_DATASOURCE_URL: jdbc:postgresql://digital_db:5432/digital
+      SPRING_DATASOURCE_USER: postgres
+      SPRING_DATASOURCE_PASSWORD: admin
+      SPRING_DATASOURCE_DB: digital
+    depends_on:
+      - digital_db
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+
